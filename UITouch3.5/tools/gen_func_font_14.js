@@ -2,9 +2,10 @@
 // Uses spawnSync with array args so Chinese characters are passed as UTF-8
 // (PowerShell would otherwise mangle the argv encoding).
 const { spawnSync } = require('child_process');
+const path = require('path');
 
-const conv = 'C:\\Users\\93160\\AppData\\Roaming\\npm\\node_modules\\lv_font_conv\\lv_font_conv.js';
-const out = 'D:\\gitee\\ZJ_M1\\UITouch3.5\\font\\ui_func_font_14.c';
+const conv = require('./font_conv_path');
+const out = path.resolve(__dirname, '..', 'font', 'ui_func_font_14.c');
 const font = 'C:\\Windows\\Fonts\\simhei.ttf';
 
 // 主页顶部标题“口味选择”，另保留旧功能页字形以防其它处引用。

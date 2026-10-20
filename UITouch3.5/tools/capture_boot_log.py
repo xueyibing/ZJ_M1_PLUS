@@ -2,9 +2,10 @@
 # 辅助脚本：复位开发板并抓取启动日志（验证 WiFi 版固件启动状态）
 import serial
 import time
+from pathlib import Path
 
 PORT = 'COM22'
-OUT = r'D:\gitee\ZJ_M1\UITouch3.5\boot_wifi_log.txt'
+OUT = Path(__file__).resolve().parents[1] / 'boot_wifi_log.txt'
 
 s = serial.Serial(PORT, 115200, timeout=1)
 # 经典 esptool 复位时序：DTR/RTS 组合触发 EN 复位

@@ -1,8 +1,9 @@
 // Generate ui_egg_desc_24 (口味中文描述).
 const { spawnSync } = require('child_process');
+const path = require('path');
 
-const conv = 'C:\\Users\\93160\\AppData\\Roaming\\npm\\node_modules\\lv_font_conv\\lv_font_conv.js';
-const out = 'D:\\gitee\\ZJ_M1\\UITouch3.5\\font\\ui_egg_desc_24.c';
+const conv = require('./font_conv_path');
+const out = path.resolve(__dirname, '..', 'font', 'ui_egg_desc_24.c');
 const font = 'C:\\Windows\\Fonts\\simhei.ttf';
 const symbols = '双面全熟蛋黄凝固紧实轻煎软糯流心嫩柔鲜单制亮';
 

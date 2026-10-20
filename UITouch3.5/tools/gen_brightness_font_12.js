@@ -1,8 +1,9 @@
 // Regenerate the compact Chinese font used by the brightness setting label.
 const { spawnSync } = require('child_process');
+const path = require('path');
 
-const conv = 'C:\\Users\\93160\\AppData\\Roaming\\npm\\node_modules\\lv_font_conv\\lv_font_conv.js';
-const out = 'D:\\gitee\\ZJ_M1\\UITouch3.5\\font\\ui_brightness_font_12.c';
+const conv = require('./font_conv_path');
+const out = path.resolve(__dirname, '..', 'font', 'ui_brightness_font_12.c');
 const font = 'C:\\Windows\\Fonts\\simhei.ttf';
 
 const args = [
