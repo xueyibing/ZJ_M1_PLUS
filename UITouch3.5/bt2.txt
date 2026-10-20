@@ -1,0 +1,10 @@
+0x42024790: pointer_search_obj at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\indev/lv_indev.c:1582
+0x42024ec2: indev_proc_press at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\indev/lv_indev.c:1275
+0x42025256: indev_proc_release at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\indev/lv_indev.c:1496
+0x420257a1: indev_encoder_proc at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\indev/lv_indev.c:1104 (discriminator 1)
+0x420257e9: indev_encoder_proc at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\indev/lv_indev.c:1121 (discriminator 2)
+0x4202a091: lv_text_get_size at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\misc/lv_text.c:130
+0x4202a143: lv_timer_delete at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\misc/lv_timer.c:199
+0x42002a44: lv_task_handler at D:\gitee\ZJ_M1\UITouch/components/lvgl/src/lv_api_map_v8.h:77
+ (inlined by) lvgl_task at D:\gitee\ZJ_M1\UITouch/src/lvgl_port.c:84
+0x4037e811: vPortTaskWrapper at C:\Users\93160\.platformio\packages\framework-espidf\components\freertos\FreeRTOS-Kernel\portable\xtensa/port.c:139

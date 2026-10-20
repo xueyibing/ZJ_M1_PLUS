@@ -1,0 +1,7 @@
+{
+    "idf.pythonInstallPath": "/usr/bin/python3",
+    "search.exclude": {
+    ".history/": true
+  }
+
+}

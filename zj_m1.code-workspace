@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "MainControl",
+            "path": "MainControl"
+        },
+        {
+            "name": "UITouch3.5",
+            "path": "UITouch3.5"
+        }
+    ],
+    "settings": {
+        "Codegeex.RepoIndex": true
+    }
+}

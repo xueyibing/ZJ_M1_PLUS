@@ -1,0 +1,14 @@
+0x420d7c23: lv_strncpy at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\stdlib\builtin/lv_string_builtin.c:219
+0x4202b275: mapping_insert at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\stdlib\builtin/lv_tlsf.c:528
+0x4202b2e8: block_trim_free at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\stdlib\builtin/lv_tlsf.c:717
+0x4202b62d: lv_tlsf_free at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\stdlib\builtin/lv_tlsf.c:1169
+0x4202a30a: lv_timer_ready at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\misc/lv_timer.c:224 (discriminator 1)
+0x4202b6c8: lv_tlsf_realloc at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\stdlib\builtin/lv_tlsf.c:1215 (discriminator 1)
+0x4201cc13: refresh_children_style at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\core/lv_obj_style.c:844
+0x4201d6df: report_style_change_core at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\core/lv_obj_style.c:826
+0x4201dd21: lv_obj_get_style_recolor_recursive at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\core/lv_obj_style.c:681
+0x4200de6d: ui_egg_drag_layout at D:\gitee\ZJ_M1\UITouch/ui/ui_jiandan.c:966
+0x4200e23f: ui_doneness_drag_cb at D:\gitee\ZJ_M1\UITouch/ui/ui_jiandan.c:1159
+0x42028b4e: cleanup_event_list_core at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\misc/lv_event.c:367 (discriminator 1)
+0x42019ba1: event_is_bubbled at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\core/lv_obj_event.c:396
+0x42019c16: event_send_core at D:\gitee\ZJ_M1\UITouch/components\lvgl\src\core/lv_obj_event.c:367

@@ -1,0 +1,15 @@
+# Local Codex renders and downloaded toolchains
+/.codex_tmp/
+
+# Local build/runtime artifacts
+**/.pio/
+**/build/
+**/node_modules/
+**/tmp/
+*.log
+*_log.txt
+*_log*.txt
+
+# Per-user VS Code tasks
+**/.vscode/tasks.json
+**/.claude/settings.local.json

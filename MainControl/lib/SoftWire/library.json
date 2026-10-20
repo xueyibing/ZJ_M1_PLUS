@@ -1,0 +1,7 @@
+{
+  "name": "SoftWire",
+  "version": "0.1.0",
+  "description": "Software bit-bang I2C with TwoWire-compatible API subset (begin/beginTransmission/write/endTransmission/requestFrom/read/available/setClock).",
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}

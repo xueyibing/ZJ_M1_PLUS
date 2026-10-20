@@ -1,0 +1,78 @@
+set(app_sources
+    ${CMAKE_SOURCE_DIR}/src/ds18b20.c
+    ${CMAKE_SOURCE_DIR}/src/buzzer.c
+    ${CMAKE_SOURCE_DIR}/src/data_manager.c
+    ${CMAKE_SOURCE_DIR}/src/lcd.c
+    ${CMAKE_SOURCE_DIR}/src/lvgl_port.c
+    ${CMAKE_SOURCE_DIR}/src/main.c
+    ${CMAKE_SOURCE_DIR}/src/touch.c
+    ${CMAKE_SOURCE_DIR}/src/uart_link.c
+    ${CMAKE_SOURCE_DIR}/src/ui_uart_bridge.c
+    ${CMAKE_SOURCE_DIR}/src/wifi_manager.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_alert.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_bypass_switch.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_common.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_i18n.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_debug.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_alert_debug.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_heater_debug.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_debug_stress_test.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_error_log.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_motor_debug.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_move_debug.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_notice.c
+    ${CMAKE_SOURCE_DIR}/ui/ui.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_home.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_data.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_settings.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_cleaning.c
+    ${CMAKE_SOURCE_DIR}/ui/ui_wifi.c
+    ${CMAKE_SOURCE_DIR}/ui/egg_img_well.c
+    ${CMAKE_SOURCE_DIR}/ui/egg_img_easy.c
+    ${CMAKE_SOURCE_DIR}/ui/egg_img_sunny.c
+    ${CMAKE_SOURCE_DIR}/ui/egg_img_sunny_side.c
+    ${CMAKE_SOURCE_DIR}/font/egg_ui_font_12.c
+    ${CMAKE_SOURCE_DIR}/font/egg_ui_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_alert_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_debug_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_alert_debug_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_dump_mock_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_notice_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_notice_font_18.c
+    ${CMAKE_SOURCE_DIR}/font/ui_clean_font_14.c
+    ${CMAKE_SOURCE_DIR}/font/ui_init_dw_font_12.c
+    ${CMAKE_SOURCE_DIR}/font/ui_laser_check_font_12.c
+    ${CMAKE_SOURCE_DIR}/font/ui_status_font_12.c
+    ${CMAKE_SOURCE_DIR}/font/ui_setting_font_12.c
+    ${CMAKE_SOURCE_DIR}/font/ui_brightness_font_12.c
+    ${CMAKE_SOURCE_DIR}/font/ui_wifi_ssid_font_12.c
+    ${CMAKE_SOURCE_DIR}/font/ui_motor_font_12.c
+    ${CMAKE_SOURCE_DIR}/font/ui_motor_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_move_debug_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_sensor_debug_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_shake_shell_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_shake_egg_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_func_font_14.c
+    ${CMAKE_SOURCE_DIR}/font/ui_func_font_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_func_font_28.c
+    ${CMAKE_SOURCE_DIR}/font/yahei.c
+    ${CMAKE_SOURCE_DIR}/font/yahei_sm.c
+    ${CMAKE_SOURCE_DIR}/font/ui_don_font_40.c
+    ${CMAKE_SOURCE_DIR}/font/ui_egg_name_28.c
+    ${CMAKE_SOURCE_DIR}/font/ui_egg_desc_13.c
+    ${CMAKE_SOURCE_DIR}/font/ui_egg_name_38.c
+    ${CMAKE_SOURCE_DIR}/font/ui_egg_desc_17.c
+    ${CMAKE_SOURCE_DIR}/font/ui_egg_desc_19.c
+    ${CMAKE_SOURCE_DIR}/font/ui_egg_btn_16.c
+    ${CMAKE_SOURCE_DIR}/font/ui_egg_btn_20.c
+    ${CMAKE_SOURCE_DIR}/font/ui_panel_20.c
+    ${CMAKE_SOURCE_DIR}/font/ui_cook_font_20.c
+)
+
+idf_component_register(
+    SRCS ${app_sources}
+    INCLUDE_DIRS "." "../ui" "../font"
+    REQUIRES esp_lcd esp_lcd_st7796 esp_lcd_touch esp_lcd_touch_ft5x06
+             driver esp_driver_i2c esp_driver_uart esp_driver_ledc lvgl
+             esp_timer nvs_flash esp_wifi esp_netif esp_event lwip esp_psram spi_flash
+)
